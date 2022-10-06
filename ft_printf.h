@@ -6,7 +6,7 @@
 /*   By: frcarras <frcarras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 07:47:19 by Fran              #+#    #+#             */
-/*   Updated: 2022/10/06 11:22:22 by frcarras         ###   ########.fr       */
+/*   Updated: 2022/10/06 12:31:37 by frcarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 # define FT_PRINTF_H
 
-# include "libft/libft.h"
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -35,5 +34,7 @@ int		ft_putpointer(uintptr_t num);
 int		ft_printf(const char *format, ...);
 char	*ft_uitoa(unsigned int n);
 int		ft_num_len(unsigned int num);
+int		ft_strlen(char *str);
+char	*ft_itoa(int n);
 
 #endif

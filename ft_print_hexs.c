@@ -6,7 +6,7 @@
 /*   By: frcarras <frcarras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 07:53:16 by Fran              #+#    #+#             */
-/*   Updated: 2022/10/06 11:21:06 by frcarras         ###   ########.fr       */
+/*   Updated: 2022/10/06 12:30:25 by frcarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ void	ft_puthex(unsigned int num, const char format)
 	else
 	{
 		if (num <= 9)
-			ft_putchar_fd((num + '0'), 1);
+			ft_putchar(num + '0');
 		else
 		{
 			if (format == 'x')
-				ft_putchar_fd((num - 10 + 'a'), 1);
+				ft_putchar(num - 10 + 'a');
 			if (format == 'X')
-				ft_putchar_fd((num - 10 + 'A'), 1);
+				ft_putchar(num - 10 + 'A');
 		}
 	}
 }

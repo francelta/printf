@@ -6,7 +6,7 @@
 /*   By: frcarras <frcarras@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 16:45:24 by Fran              #+#    #+#             */
-/*   Updated: 2022/10/06 12:11:43 by frcarras         ###   ########.fr       */
+/*   Updated: 2022/10/06 12:28:38 by frcarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,15 @@ int	ft_putstr(char *str)
 	return (len);
 }
 
-//&& ft_strchr("cspdiuxX%", contenido[i + 1])
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
 
 int	ft_printf(const char *contenido, ...)
 {
